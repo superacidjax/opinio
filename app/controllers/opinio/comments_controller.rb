@@ -1,3 +1,4 @@
+'require kaminari'
 class Opinio::CommentsController < ApplicationController
   include Opinio::Controllers::InternalHelpers
   include Opinio::Controllers::Replies if Opinio.accept_replies
@@ -43,5 +44,5 @@ class Opinio::CommentsController < ApplicationController
       format.html { redirect_to( opinio_after_destroy_path(@comment) ) }
     end
   end
-  
+
 end

@@ -6,6 +6,7 @@ gem "kaminari"
 gem "rails"
 gem "sqlite3"
 gem "jquery-rails"
+gem 'protected_attributes'
 
 group :development do
   platforms :mri_19 do

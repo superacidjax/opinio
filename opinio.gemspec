@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.add_dependency( 'rails' )
   s.add_dependency( 'kaminari' )
   s.add_dependency( 'jquery-rails' )
+  s.add_dependency( 'protected_attributes')
 
   s.files       = Dir["{app,lib,config}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.md"]
 end

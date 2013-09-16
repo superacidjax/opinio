@@ -1,10 +1,9 @@
-'require kaminari'
 class Opinio::CommentsController < ApplicationController
   include Opinio::Controllers::InternalHelpers
   include Opinio::Controllers::Replies if Opinio.accept_replies
 
   def index
-    @comments = resource.comments.page(params[:page])
+    @comments = Comments.all
   end
 
   def create
